@@ -1,0 +1,400 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #0d0d12;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+
+    background:
+
+        radial-gradient(circle at top, #252535, #0d0d12 60%);
+
+}
+
+.small-text {
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+
+    opacity: 0.6;
+
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+
+    font-size: 70px;
+
+    margin-bottom: 10px;
+
+}
+
+.birthday {
+
+    font-size: 25px;
+
+    letter-spacing: 5px;
+
+}
+
+.age {
+
+    font-size: 110px;
+
+    font-weight: bold;
+
+    background: linear-gradient(45deg, #ffffff, #aaa);
+
+    -webkit-background-clip: text;
+
+    color: transparent;
+
+    margin-top: 10px;
+
+}
+
+.years {
+
+    opacity: 0.6;
+
+    margin-bottom: 35px;
+
+}
+
+button {
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #111;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+
+    transform: scale(1.08);
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+main {
+
+    animation: fadeIn 1.2s ease;
+
+}
+
+section {
+
+    padding: 80px 20px;
+
+}
+
+.intro {
+
+    min-height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #111118;
+
+}
+
+.intro h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+.photos {
+
+    background: #0d0d12;
+
+}
+
+.photos h2 {
+
+    margin-bottom: 40px;
+
+}
+
+.photo-grid {
+
+    max-width: 900px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 20px;
+}
+
+.photo-card {
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    aspect-ratio: 1 / 1;
+
+    background: #222;
+
+}
+
+.photo-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+
+}
+
+.photo-card img:hover {
+
+    transform: scale(1.08);
+
+}
+
+.message {
+
+    background: #15151d;
+
+}
+
+.message-box {
+
+    max-width: 650px;
+
+    margin: auto;
+
+    padding: 45px 30px;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 25px;
+
+}
+
+.message-box h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+}
+
+.message-box p {
+
+    font-size: 17px;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+
+    color: #ddd;
+
+}
+
+.love {
+
+    font-size: 25px !important;
+
+    color: white !important;
+
+    margin-top: 35px;
+}
+
+.ending {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background:
+
+        radial-gradient(circle at center, #272735, #0d0d12 65%);
+
+}
+
+.cake {
+
+    font-size: 80px;
+
+    margin-bottom: 25px;
+
+}
+
+.ending h2 {
+
+    font-size: 40px;
+
+    margin-bottom: 15px;
+
+}
+
+.ending p {
+
+    color: #bbb;
+
+    margin-bottom: 10px;
+
+}
+
+.heart {
+
+    font-size: 45px;
+
+    margin-top: 30px;
+
+    animation: heartbeat 1.5s infinite;
+
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes heartbeat {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.2);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+
+        font-size: 55px;
+
+    }
+
+    .birthday {
+
+        font-size: 20px;
+
+    }
+
+    .age {
+
+        font-size: 90px;
+
+    }
+
+    .intro h2 {
+
+        font-size: 28px;
+
+    }
+
+    .ending h2 {
+
+        font-size: 30px;
+
+    }
+
+}
